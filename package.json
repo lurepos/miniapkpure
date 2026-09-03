@@ -1,11 +1,16 @@
 {
-  "name": "apkpure",
+  "name": "@lurepos/apkpure",
   "version": "0.6.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "dev": "tsx src/cli.ts",
     "clean": "node -e \"const fs=require('fs');['dist','output','favorites.txt','.env'].forEach((p)=>{try{fs.rmSync(p,{recursive:true,force:true});}catch(_){}})\""
   },

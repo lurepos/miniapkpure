@@ -1,8 +1,38 @@
-# apkpure
+# @lurepos/apkpure
 
-CLI tool to inspect and download APK / XAPK packages from ApkPure.
+CLI tool and Node.js SDK to inspect and download APK / XAPK packages from ApkPure.
 
-## Installation & Build
+## Installation
+
+### Global CLI
+
+```bash
+npm install -g @lurepos/apkpure
+# or using pnpm / yarn / bun
+pnpm add -g @lurepos/apkpure
+yarn global add @lurepos/apkpure
+bun add -g @lurepos/apkpure
+```
+
+Or run directly without installing:
+
+```bash
+npx @lurepos/apkpure info com.instagram.android
+# or
+bunx @lurepos/apkpure info com.instagram.android
+```
+
+### Local Dependency (SDK)
+
+```bash
+npm install @lurepos/apkpure
+# or
+pnpm add @lurepos/apkpure
+yarn add @lurepos/apkpure
+bun add @lurepos/apkpure
+```
+
+## Development & Local Build
 
 ```bash
 pnpm install
@@ -78,7 +108,7 @@ apkpure output /path/to/apks
 <img src="example_sdk.gif" alt="alt text" style="border-radius: 10px; border: 3px solid #333; padding: 5px; max-width: 100%; height: auto;" />
 
 ```js
-import { ApkPure } from "apkpure";
+import { ApkPure } from "@lurepos/apkpure";
 
 const client = new ApkPure({ outputDir: "./downloads" });
 
