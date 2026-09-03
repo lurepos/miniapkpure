@@ -1,5 +1,8 @@
 # @lurepos/apkpure
 
+[![npm version](https://img.shields.io/npm/v/@lurepos/apkpure.svg)](https://www.npmjs.com/package/@lurepos/apkpure)
+[![npm downloads](https://img.shields.io/npm/dm/@lurepos/apkpure.svg)](https://www.npmjs.com/package/@lurepos/apkpure)
+
 CLI tool and Node.js SDK to inspect and download APK / XAPK packages from ApkPure.
 
 ## Installation
