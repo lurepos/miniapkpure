@@ -1,0 +1,26 @@
+{
+  "name": "apkpure",
+  "version": "0.6.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "clean": "node -e \"const fs=require('fs');['dist','output','favorites.txt','.env'].forEach((p)=>{try{fs.rmSync(p,{recursive:true,force:true});}catch(_){}})\""
+  },
+  "bin": {
+    "apkpure": "./dist/cli.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.19"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
